@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dhruv's Portfolio</title>
+  <title>Dhruv Bhandari | Portfolio</title>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -17,35 +17,43 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #f2f7ff;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f7fa;
       color: #333;
     }
 
     header {
-      background: linear-gradient(135deg, #4b6cb7, #182848);
-      color: white;
+      background: linear-gradient(to right, #4b79a1, #283e51);
+      color: #fff;
       padding: 3rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
     }
 
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       opacity: 0.9;
     }
 
     nav {
-      background: #fff;
       display: flex;
       justify-content: center;
+      gap: 2rem;
       padding: 1rem;
-      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
       z-index: 999;
@@ -54,56 +62,63 @@
     nav a {
       text-decoration: none;
       color: #333;
-      margin: 0 20px;
       font-weight: 600;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #4b6cb7;
+      color: #4b79a1;
     }
 
     section {
       max-width: 900px;
-      background: white;
       margin: 2rem auto;
       padding: 2rem;
+      background-color: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     }
 
     section h2 {
-      color: #4b6cb7;
+      color: #4b79a1;
       margin-bottom: 1rem;
     }
 
-    ul li {
-      margin-bottom: 0.8rem;
+    section p, li {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
     }
 
     a {
-      color: #4b6cb7;
+      color: #4b79a1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: #182848;
+      background-color: #283e51;
       color: white;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
       nav {
         flex-direction: column;
+        align-items: center;
       }
 
-      nav a {
-        margin: 10px 0;
+      header h1 {
+        font-size: 2rem;
       }
 
       section {
@@ -116,11 +131,14 @@
 
 <body>
 
+  <!-- Header -->
   <header>
+    <img src="https://via.placeholder.com/130" alt="Dhruv Bhandari Photo" />
     <h1>Dhruv Bhandari</h1>
-    <p>Web Developer | AI Enthusiast | Cybersecurity Learner</p>
+    <p>Web Developer | AI & Cybersecurity Enthusiast</p>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -128,33 +146,40 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate developer with interests in web development, artificial intelligence, and cybersecurity. I love building creative and functional websites and exploring new tech stacks.</p>
+    <p>Hello! I'm Dhruv, a passionate developer with interests in full-stack development, artificial intelligence, and cybersecurity. I enjoy creating user-friendly websites and solving real-world problems with technology.</p>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>AI Chatbot for Education:</strong> A virtual assistant built to help students and educators.</li>
-      <li><strong>E-Commerce Catalog:</strong> Product display and filtering system using React.</li>
-      <li><strong>Portfolio Website:</strong> A personal responsive site made with HTML, CSS, and JS.</li>
+      <li><strong>AI-Powered Chatbot:</strong> Built a chatbot for technical education using NLP.</li>
+      <li><strong>Portfolio Website:</strong> Designed a responsive and attractive portfolio using HTML, CSS, and JS.</li>
+      <li><strong>E-Commerce Catalog:</strong> Product catalog with filter, sort, and cart system in React.js.</li>
     </ul>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
-    <p>HTML, CSS, JavaScript, React, Python, C, Java, Git, MySQL, Figma</p>
+    <p><strong>Languages:</strong> HTML, CSS, JavaScript, Python, C, Java</p>
+    <p><strong>Frameworks & Tools:</strong> React, GitHub, MySQL, VS Code, Figma</p>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: dhruvbhandari1710@gmail.com</p>
+    <p>Email: dhruvb@example.com</p>
     <p>GitHub: <a href="https://github.com/Dhruvbhandariiii" target="_blank">github.com/Dhruvbhandariiii</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Dhruv Bhandari. All rights reserved.</p>
+    <p>&copy; 2025 Dhruv Bhandari | All Rights Reserved</p>
   </footer>
 
 </body>
